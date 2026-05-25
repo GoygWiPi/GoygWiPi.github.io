@@ -2,7 +2,7 @@ body {
 
     margin: 0;
     background-color: #676767;
-    font-size: 16px;
+    font-size: clamp(16px, 2.5vw, 80px);
     color: #ffffff;
     font-family: "Times New Roman", Times, serif;
 }
@@ -10,7 +10,7 @@ body {
 h1 {
 
     font-size: 1.5em;
-    margin: 1.5em 1.5em 1.5em 1.5em;
+    margin: 1.5em;
 }
 
 p {

@@ -1,20 +1,17 @@
 
 function fillEmojiLine() {
 
-    const line = document.getElementById("emoji-line");
-    
-    const temp = document.createElement("span");
-    temp.style.visibility = "hidden";
-    temp.style.position = "absolute";
-    temp.textContent = "😸";
-    document.body.appendChild(temp);
-    const emojiWidth = temp.offsetWidth;
-    document.body.removeChild(temp);
+    const emojiLine = document.getElementById('emoji-line');
+    const emoji = '😸';
 
-    const count = Math.ceil(window.innerWidth / emojiWidth);
-    line.innerHTML = "😸".repeat(count);
+    emojiLine.textContent = emoji;
+    const emojiWidth = emojiLine.getBoundingClientRect().width;
+
+    const windowWidth = window.innerWidth;
+    const count = Math.floor(windowWidth / emojiWidth);
+
+    emojiLine.textContent = emoji.repeat(count);
 }
 
-window.addEventListener("load", fillEmojiLine);
-
-window.addEventListener("resize", fillEmojiLine);
+fillEmojiLine();
+window.addEventListener('resize', fillEmojiLine);

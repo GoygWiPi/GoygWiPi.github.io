@@ -14,7 +14,7 @@ function fillEmojiLine() {
     const emojiWidth = temp.getBoundingClientRect().width;
     document.body.removeChild(temp);
 
-    const count = window.innerWidth / emojiWidth;
+    const count = Math.floor(window.innerWidth / emojiWidth);
     emojiLine.textContent = emoji.repeat(count);
 }
 

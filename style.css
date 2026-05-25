@@ -37,17 +37,17 @@ body {
 img {
 
     width: 30vw;
-    margin: 0 1.5rem 1.5rem 3rem;
+    margin: 0 1rem 1rem 3rem;
 }
 
 h1 {
 
     font-size: 1.5em;
-    margin: 1.5rem;
+    margin: 1rem 1rem 1rem 1.5rem;
 }
 
 p {
 
     font-size: 1em;
-    margin: 0 1.5rem 1.5rem 0;
+    margin: 0 1rem 1rem 0;
 }

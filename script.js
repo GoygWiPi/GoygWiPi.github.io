@@ -2,14 +2,10 @@
 function fillEmojiLine() {
 
     const line = document.getElementById("emoji-line");
-
-    line.innerHTML = "";
-
-    while (line.scrollWidth < window.innerWidth) {
-
-        line.innerHTML += "😸";
-    }
-
+    line.innerHTML = "😸";
+    const emojiWidth = line.scrollWidth;
+    const count = Math.ceil(window.innerWidth / emojiWidth);
+    line.innerHTML = "😸".repeat(count);
 }
 
 window.addEventListener("load", fillEmojiLine);

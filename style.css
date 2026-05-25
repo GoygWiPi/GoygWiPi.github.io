@@ -32,12 +32,13 @@ body {
     overflow: hidden;
     font-size: 1em;
     margin: 1em 0 0 0;
+    text-align: center;
 }
 
 h1 {
 
     font-size: 1.5em;
-    margin: 0.5em 1em 1em 1em;
+    margin: 1em;
 }
 
 p {
